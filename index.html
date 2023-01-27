@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Developers Survey Form</h1>
+    <p id="description">Help us improve our coding skills.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label class="title" for="name">Name:</label>
+        <input class="info" id="name" type="text" required placeholder="your name"/>
+        <label class="title" id="email">Email:</label>
+        <input class="info" id="email" type="email" required placeholder="your email"/>
+        <label class="title" for="number">Age:</label>
+        <input class="info" id="number" type="number" min="18" max="120" placeholder="your age"/>
+      </fieldset>
+
+      <fieldset>
+        <label class="title" for="dropdown">What programming language is commonly used?</label>
+          <select id="dropdown">
+            <option>select one</option>
+            <option>Python</option>
+            <option>JavaScript</option>
+            <option>Java</option>
+            <option>C#</option>
+         </select>
+      </fieldset>
+
+      <fieldset>
+        <label class="title">I think freeCodeCamp is the best place to learn. What do you think?</label>       
+          <label for="agree"><input id="agree" class="inline" type="radio" name="the-best" value="agree"/> I agree.</label>
+          <label for="no-sure"><input id="not-sure" class="inline" type="radio" name="the-best"value="not-sure"/> Not sure.</label>      
+      </fieldset>
+      <fieldset>
+        <label class="title">What subjects would you recommend for newbies?</label>  
+            <label for="frontend"><input class="inline" type="checkbox" value="frontend"/> FrontEnd Projects</label>
+            <label for="backend"><input class="inline" type="checkbox" value="backend"/> BackEnd Projects</</label>
+            <label for="open-source"><input class="inline" type="checkbox" value="open-source"/> Open Source Community</label>
+            <label for="programming"><input class="inline" type="checkbox" value="programming"/> Programming Videos</label>
+      </fieldset>
+
+      <fieldset>
+        <label class="title" for="message">Any message for new developers?</label>
+          <textarea id="message" rows="6" cols="30" placeholder="enter your message here"></textarea>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
